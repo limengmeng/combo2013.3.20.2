@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D50369616F96EB100878FD4 /* PartyDetialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D50369316F96EB100878FD4 /* PartyDetialViewController.m */; };
+		9D50369716F96EB100878FD4 /* PartyDetialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D50369316F96EB100878FD4 /* PartyDetialViewController.m */; };
+		9D50369816F96EB100878FD4 /* PartyDetialLastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D50369516F96EB100878FD4 /* PartyDetialLastViewController.m */; };
+		9D50369916F96EB100878FD4 /* PartyDetialLastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D50369516F96EB100878FD4 /* PartyDetialLastViewController.m */; };
 		9DFD443716F852DA00C3CAF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFD443616F852DA00C3CAF7 /* UIKit.framework */; };
 		9DFD443916F852DA00C3CAF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFD443816F852DA00C3CAF7 /* Foundation.framework */; };
 		9DFD443B16F852DA00C3CAF7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFD443A16F852DA00C3CAF7 /* CoreGraphics.framework */; };
@@ -49,8 +53,6 @@
 		9DFD451716F85EA100C3CAF7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFD451616F85EA100C3CAF7 /* SystemConfiguration.framework */; };
 		9DFD451916F85EAC00C3CAF7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFD451816F85EAB00C3CAF7 /* MobileCoreServices.framework */; };
 		9DFD451B16F85EB800C3CAF7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFD451A16F85EB800C3CAF7 /* QuartzCore.framework */; };
-		9DFD451E16F85F3100C3CAF7 /* PartyDetialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD451D16F85F3100C3CAF7 /* PartyDetialViewController.m */; };
-		9DFD452116F85F5600C3CAF7 /* PartyDetialLastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD452016F85F5600C3CAF7 /* PartyDetialLastViewController.m */; };
 		9DFD452C16F8600900C3CAF7 /* sr_refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DFD452516F8600900C3CAF7 /* sr_refresh.png */; };
 		9DFD452D16F8600900C3CAF7 /* sr_refresh@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DFD452616F8600900C3CAF7 /* sr_refresh@2X.png */; };
 		9DFD452E16F8600900C3CAF7 /* SRSlimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD452816F8600900C3CAF7 /* SRSlimeView.m */; };
@@ -143,7 +145,6 @@
 		9DFD461516F8777A00C3CAF7 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD45E416F875A700C3CAF7 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9DFD461616F8777A00C3CAF7 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD45E816F875A700C3CAF7 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9DFD461716F8777A00C3CAF7 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD45EA16F875A700C3CAF7 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9DFD461816F8777A00C3CAF7 /* PartyDetialLastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD452016F85F5600C3CAF7 /* PartyDetialLastViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9DFD461916F8777A00C3CAF7 /* PagedFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD457C16F8637500C3CAF7 /* PagedFlowView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9DFD461D16F87AF000C3CAF7 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD461C16F87AF000C3CAF7 /* JSONKit.m */; };
 		9DFD462016F87B0700C3CAF7 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD461F16F87B0700C3CAF7 /* MBProgressHUD.m */; };
@@ -165,7 +166,6 @@
 		9DFD463016F881D900C3CAF7 /* takePhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD44FF16F85DCE00C3CAF7 /* takePhoto.m */; };
 		9DFD463116F881D900C3CAF7 /* FriendViewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD450116F85DCE00C3CAF7 /* FriendViewView.m */; };
 		9DFD463216F881D900C3CAF7 /* WelcomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD450316F85DCE00C3CAF7 /* WelcomViewController.m */; };
-		9DFD463316F881D900C3CAF7 /* PartyDetialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD451D16F85F3100C3CAF7 /* PartyDetialViewController.m */; };
 		9DFD463416F881D900C3CAF7 /* MyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD457616F8636800C3CAF7 /* MyAnnotation.m */; };
 		9DFD463516F881D900C3CAF7 /* MyMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD457816F8636800C3CAF7 /* MyMapViewController.m */; };
 		9DFD463616F881D900C3CAF7 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD455616F8630E00C3CAF7 /* DetailViewController.m */; };
@@ -205,6 +205,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D50369216F96EB100878FD4 /* PartyDetialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartyDetialViewController.h; sourceTree = "<group>"; };
+		9D50369316F96EB100878FD4 /* PartyDetialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartyDetialViewController.m; sourceTree = "<group>"; };
+		9D50369416F96EB100878FD4 /* PartyDetialLastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartyDetialLastViewController.h; sourceTree = "<group>"; };
+		9D50369516F96EB100878FD4 /* PartyDetialLastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartyDetialLastViewController.m; sourceTree = "<group>"; };
 		9DFD443316F852DA00C3CAF7 /* Combo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Combo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DFD443616F852DA00C3CAF7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9DFD443816F852DA00C3CAF7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -267,10 +271,6 @@
 		9DFD451616F85EA100C3CAF7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		9DFD451816F85EAB00C3CAF7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		9DFD451A16F85EB800C3CAF7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		9DFD451C16F85F3100C3CAF7 /* PartyDetialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartyDetialViewController.h; sourceTree = "<group>"; };
-		9DFD451D16F85F3100C3CAF7 /* PartyDetialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartyDetialViewController.m; sourceTree = "<group>"; };
-		9DFD451F16F85F5600C3CAF7 /* PartyDetialLastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartyDetialLastViewController.h; sourceTree = "<group>"; };
-		9DFD452016F85F5600C3CAF7 /* PartyDetialLastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartyDetialLastViewController.m; sourceTree = "<group>"; };
 		9DFD452516F8600900C3CAF7 /* sr_refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sr_refresh.png; sourceTree = "<group>"; };
 		9DFD452616F8600900C3CAF7 /* sr_refresh@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sr_refresh@2X.png"; sourceTree = "<group>"; };
 		9DFD452716F8600900C3CAF7 /* SRSlimeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRSlimeView.h; sourceTree = "<group>"; };
@@ -599,10 +599,10 @@
 			children = (
 				9DFD448216F8558D00C3CAF7 /* PartyViewController.h */,
 				9DFD448316F8558D00C3CAF7 /* PartyViewController.m */,
-				9DFD451C16F85F3100C3CAF7 /* PartyDetialViewController.h */,
-				9DFD451D16F85F3100C3CAF7 /* PartyDetialViewController.m */,
-				9DFD451F16F85F5600C3CAF7 /* PartyDetialLastViewController.h */,
-				9DFD452016F85F5600C3CAF7 /* PartyDetialLastViewController.m */,
+				9D50369216F96EB100878FD4 /* PartyDetialViewController.h */,
+				9D50369316F96EB100878FD4 /* PartyDetialViewController.m */,
+				9D50369416F96EB100878FD4 /* PartyDetialLastViewController.h */,
+				9D50369516F96EB100878FD4 /* PartyDetialLastViewController.m */,
 				9DFD457B16F8637500C3CAF7 /* PagedFlowView.h */,
 				9DFD457C16F8637500C3CAF7 /* PagedFlowView.m */,
 				9DFD457516F8636800C3CAF7 /* MyAnnotation.h */,
@@ -954,7 +954,6 @@
 				9DFD463016F881D900C3CAF7 /* takePhoto.m in Sources */,
 				9DFD463116F881D900C3CAF7 /* FriendViewView.m in Sources */,
 				9DFD463216F881D900C3CAF7 /* WelcomViewController.m in Sources */,
-				9DFD463316F881D900C3CAF7 /* PartyDetialViewController.m in Sources */,
 				9DFD463416F881D900C3CAF7 /* MyAnnotation.m in Sources */,
 				9DFD463516F881D900C3CAF7 /* MyMapViewController.m in Sources */,
 				9DFD463616F881D900C3CAF7 /* DetailViewController.m in Sources */,
@@ -1001,7 +1000,6 @@
 				9DFD461516F8777A00C3CAF7 /* ASIHTTPRequest.m in Sources */,
 				9DFD461616F8777A00C3CAF7 /* ASIInputStream.m in Sources */,
 				9DFD461716F8777A00C3CAF7 /* ASINetworkQueue.m in Sources */,
-				9DFD461816F8777A00C3CAF7 /* PartyDetialLastViewController.m in Sources */,
 				9DFD461916F8777A00C3CAF7 /* PagedFlowView.m in Sources */,
 				9DFD45F716F876F500C3CAF7 /* SRSlimeView.m in Sources */,
 				9DFD444316F852DA00C3CAF7 /* main.m in Sources */,
@@ -1016,6 +1014,8 @@
 				DCB5CEFC16F9505100CA3B9C /* AboutViewController.m in Sources */,
 				DCB5CEFE16F9505100CA3B9C /* FunctionViewController.m in Sources */,
 				DCB5CF0016F9505100CA3B9C /* WelcomeViewController.m in Sources */,
+				9D50369616F96EB100878FD4 /* PartyDetialViewController.m in Sources */,
+				9D50369816F96EB100878FD4 /* PartyDetialLastViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1035,8 +1035,6 @@
 				9DFD450916F85DCE00C3CAF7 /* takePhoto.m in Sources */,
 				9DFD450A16F85DCE00C3CAF7 /* FriendViewView.m in Sources */,
 				9DFD450B16F85DCE00C3CAF7 /* WelcomViewController.m in Sources */,
-				9DFD451E16F85F3100C3CAF7 /* PartyDetialViewController.m in Sources */,
-				9DFD452116F85F5600C3CAF7 /* PartyDetialLastViewController.m in Sources */,
 				9DFD452E16F8600900C3CAF7 /* SRSlimeView.m in Sources */,
 				9DFD452F16F8600900C3CAF7 /* SRRefreshView.m in Sources */,
 				9DFD453416F8602500C3CAF7 /* SVSegmentedControl.m in Sources */,
@@ -1097,6 +1095,8 @@
 				DCB5CEFD16F9505100CA3B9C /* AboutViewController.m in Sources */,
 				DCB5CEFF16F9505100CA3B9C /* FunctionViewController.m in Sources */,
 				DCB5CF0116F9505100CA3B9C /* WelcomeViewController.m in Sources */,
+				9D50369716F96EB100878FD4 /* PartyDetialViewController.m in Sources */,
+				9D50369916F96EB100878FD4 /* PartyDetialLastViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

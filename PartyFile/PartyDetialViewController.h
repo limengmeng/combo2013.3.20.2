@@ -33,8 +33,6 @@
     int OldPage;
     UILabel * label;
     
-    UIButton *back;
-    UIButton *join;
     NSString *stringB;
     NSMutableString *stringA;
     NSString *p_id;//传值传的是p_id

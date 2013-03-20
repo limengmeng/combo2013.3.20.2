@@ -93,8 +93,6 @@
 -(void)requestFinished:(ASIHTTPRequest *)request
 {
     if (numFlogLogout==0) {
-        
-        
         NSData* response=[request responseData];
         //NSLog(@"%@",response);
         NSError* error;
@@ -105,52 +103,50 @@
         self.joinUser=[party objectForKey:@"participants"];
         NSDictionary* userdict=[self.creatUser objectAtIndex:0];
         label.text=[userdict objectForKey:@"USER_NICK"];
-        NSString *stringButton=[party objectForKey:@"P_STATUS"];
-        back = [UIButton buttonWithType:UIButtonTypeCustom];
-        
-        if ([[stringButton substringToIndex:1] isEqualToString:@"N"]) {
-            UIButton *buttonGoParty=[UIButton buttonWithType:UIButtonTypeCustom];
-            [buttonGoParty setImage:[UIImage imageNamed:@"POgo@2x.png"] forState:UIControlStateNormal];
-            buttonGoParty.titleLabel.text=@"加入派对";
-            [buttonGoParty addTarget:self action:@selector(ButtonClick:) forControlEvents:UIControlEventTouchUpInside];
-            [buttonGoParty setFrame:CGRectMake(0,mainscreenhight-107, 160, 44)];
-            [self.view addSubview:buttonGoParty];
-        }
-        if ([[stringButton substringToIndex:1]isEqualToString:@"Y"]) {
+        NSString *stringButton=[[party objectForKey:@"P_STATUS"]substringToIndex:1];
+        if ([stringButton isEqualToString:@"Y"]||[stringButton isEqualToString:@"W"]) {
+            UIButton *jionButton = [UIButton buttonWithType:UIButtonTypeCustom];
+            NSString *stringStatus=[[party objectForKey:@"take_status"] substringFromIndex:0];
+            if ([[stringStatus substringToIndex:1] isEqualToString:@"N"]) {
+                UIButton *buttonGoParty=[UIButton buttonWithType:UIButtonTypeCustom];
+                [buttonGoParty setImage:[UIImage imageNamed:@"POgo@2x.png"] forState:UIControlStateNormal];
+                buttonGoParty.titleLabel.text=@"加入派对";
+                [buttonGoParty addTarget:self action:@selector(ButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+                [buttonGoParty setFrame:CGRectMake(0,mainscreenhight-107, 160, 44)];
+                [self.view addSubview:buttonGoParty];
+            }
+            if ([[stringStatus substringToIndex:1] isEqualToString:@"Y"]) {
+                [jionButton setImage:[UIImage imageNamed:@"POwontgo@2x.png"] forState:UIControlStateNormal];
+                jionButton.titleLabel.text=@"我不去了";
+                [jionButton addTarget:self action:@selector(buttonNojoin:) forControlEvents:UIControlEventTouchUpInside];
+                [jionButton setFrame:CGRectMake(0,mainscreenhight-107, 160, 44)];
+                [self.view addSubview:jionButton];
+                
+                
+            }
             
-            back.titleLabel.text=@"我不去了";
-            [back setImage:[UIImage imageNamed:@"POwontgo@2x.png"] forState:UIControlStateNormal];
-            [back addTarget:self action:@selector(buttonNojoin:) forControlEvents:UIControlEventTouchUpInside];
-            [back setFrame:CGRectMake(0,mainscreenhight-107, 160, 44)];
-            [self.view addSubview:back];
+            UIImageView *imageView=[[UIImageView alloc] initWithFrame:CGRectMake(158, mainscreenhight-100, 2, 30)];
+            imageView.image=[UIImage imageNamed:@"CutOffRule.png"];
+            
+            [self.view addSubview:imageView];
+            //==========邀请按钮===============================
+            UIButton *inviteButton =[UIButton buttonWithType:UIButtonTypeCustom];
+            [inviteButton setImage:[UIImage imageNamed:@"POinvite@2x.png"] forState:UIControlStateNormal];
+            [inviteButton addTarget:self action:@selector(showFriendView:) forControlEvents:UIControlEventTouchUpInside];
+            [inviteButton setFrame:CGRectMake(160,mainscreenhight-107, 160, 44)];
+            [self.view addSubview:inviteButton];
             
         }
-        if ([[stringButton substringToIndex:1]isEqualToString:@"W"]) {
-            back.titleLabel.text=@"等待";
-            [back setImage:[UIImage imageNamed:@"POwontgo@2x.png"] forState:UIControlStateNormal];
-            [back addTarget:self action:@selector(buttonNojoinWaite) forControlEvents:UIControlEventTouchUpInside];
-            [back setFrame:CGRectMake(0,mainscreenhight-107, 160, 44)];
-            [self.view addSubview:back];
-        }
         
-        
-        UIImageView *imageView=[[UIImageView alloc] initWithFrame:CGRectMake(158, mainscreenhight-100, 2, 30)];
-        imageView.image=[UIImage imageNamed:@"CutOffRule.png"];
-        
-        [self.view addSubview:imageView];
-        //==========邀请按钮===============================
-        join =[UIButton buttonWithType:UIButtonTypeCustom];
-        [join setImage:[UIImage imageNamed:@"POinvite@2x.png"] forState:UIControlStateNormal];
-        [join addTarget:self action:@selector(showFriendView:) forControlEvents:UIControlEventTouchUpInside];
-        [join setFrame:CGRectMake(160,mainscreenhight-107, 160, 44)];
-        [self.view addSubview:join];
-        FlowView = [[PagedFlowView alloc] initWithFrame:CGRectMake(0,10,320,140)];
+        FlowView = [[PagedFlowView alloc] initWithFrame:CGRectMake(0,0,320,140)];
         FlowView.delegate = self;
         FlowView.dataSource = self;
         FlowView.minimumPageAlpha = 0.7;
         FlowView.minimumPageScale = 0.6;
         [tableview reloadData];
     }
+    
+
 }
 -(void)buttonNojoinWaite
 {
