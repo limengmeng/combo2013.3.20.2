@@ -272,7 +272,7 @@
     lng=newLocation.coordinate.longitude;
     lat=newLocation.coordinate.latitude;
     NSLog(@"获取你的经纬度：：：：：：：：经度:%g      纬度:%g",lng,lat);
-  
+    
 }
 //==============获取用户的UUId===================================================
 -(void)getUUidForthis
@@ -482,7 +482,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 138;
+    return 127;
 }
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -505,7 +505,7 @@
     UIImageView *imagePICView5;//性别
     
     UILabel *lable1;//联合创建人
-    UILabel *lable2;//地点
+    UILabel *lable2;//地点距离
     UILabel *lable3;//时间
     UILabel *lable4;//主创建人的名字
     UILabel *lable5;//活动类型
@@ -516,34 +516,32 @@
     imagePICView2=[[UIImageView alloc]initWithFrame:CGRectMake(180, 11, 43, 43)];
     imagePICView3=[[UIImageView alloc]initWithFrame:CGRectMake(208, 9, 45, 45)];
     imagePICView4=[[UIImageView alloc]initWithFrame:CGRectMake(243, 7, 47, 47)];
-    imagePICView5=[[UIImageView alloc]initWithFrame:CGRectMake(223, 55, 13, 15)];
-    UIImageView* prImage=[[UIImageView alloc]initWithFrame:CGRectMake(0, 44, 300, 28)];
-    prImage.image=[UIImage imageNamed:@"PRpartyportrait@2x.png"];
-    UIImageView* addrImage=[[UIImageView alloc]initWithFrame:CGRectMake(6, 94, 10, 12)];
+    imagePICView5=[[UIImageView alloc]initWithFrame:CGRectMake(223, 55, 8, 10)];
+    UIImageView* prImage=[[UIImageView alloc]initWithFrame:CGRectMake(0, 25, 300, 101)];
+    prImage.image=[UIImage imageNamed:@"partylabel"];
     UIImageView* peoImage=[[UIImageView alloc]initWithFrame:CGRectMake(6, 77, 10, 10)];
-    UIImageView* timeImage=[[UIImageView alloc]initWithFrame:CGRectMake(6, 115, 10, 10)];
-    peoImage.image=[UIImage imageNamed:@"PRuser@2x.png"];
-    addrImage.image=[UIImage imageNamed:@"PRlocation@2x.png"];
-    timeImage.image=[UIImage imageNamed:@"PRtime@2x.png"];
-    [cell.contentView addSubview:peoImage];
-    [cell.contentView addSubview:addrImage];
-    [cell.contentView addSubview:timeImage];
-    
-    [cell.contentView addSubview:imagePICView0];
+    UIImageView* timeImage=[[UIImageView alloc]initWithFrame:CGRectMake(6, 94, 10, 10)];
+    peoImage.image=[UIImage imageNamed:@"Person"];
+    timeImage.image=[UIImage imageNamed:@"clock"];
     [cell.contentView addSubview:imagePICView1];
     [cell.contentView addSubview:imagePICView2];
     [cell.contentView addSubview:imagePICView3];
     [cell.contentView addSubview:prImage];
+    [cell.contentView addSubview:peoImage];
+    [cell.contentView addSubview:timeImage];
+    
+    [cell.contentView addSubview:imagePICView0];
+    
     [cell.contentView addSubview:imagePICView4];
     [cell.contentView addSubview:imagePICView5];
-
-    lable1=[[UILabel alloc]initWithFrame:CGRectMake(106, 68, 190, 27)];
+    
+    lable1=[[UILabel alloc]initWithFrame:CGRectMake(30, 68, 190, 27)];
     lable1.textColor=[UIColor colorWithRed:99.0/255 green:99.0/255 blue:99.0/255 alpha:1];
     lable1.font=[UIFont systemFontOfSize:14.0];
-    lable2=[[UILabel alloc]initWithFrame:CGRectMake(60, 80, 253, 43)];
+    lable2=[[UILabel alloc]initWithFrame:CGRectMake(200, 60, 100, 43)];
     lable2.textColor=[UIColor colorWithRed:99.0/255 green:99.0/255 blue:99.0/255 alpha:1];
     lable2.font=[UIFont systemFontOfSize:14.0];
-    lable3=[[UILabel alloc]initWithFrame:CGRectMake(64, 102, 244, 35)];
+    lable3=[[UILabel alloc]initWithFrame:CGRectMake(30, 84, 244, 35)];
     lable3.textColor=[UIColor colorWithRed:99.0/255 green:99.0/255 blue:99.0/255 alpha:1];
     lable3.font=[UIFont systemFontOfSize:14.0];
     lable6=[[UILabel alloc]initWithFrame:CGRectMake(89, 68, 46, 27)];
@@ -573,40 +571,34 @@
     [cell.contentView addSubview:lable5];
     [cell.contentView addSubview:lable6];
     [cell.contentView addSubview:lable7];
-
-    
-    UILabel* peoLabel=[[UILabel alloc]initWithFrame:CGRectMake(24, 71, 60, 21)];
-    peoLabel.textColor=[UIColor lightGrayColor];
-    peoLabel.backgroundColor=[UIColor clearColor];
-    peoLabel.font=[UIFont systemFontOfSize:14.0];
-    peoLabel.text=@"联合创建:";
-    [cell.contentView addSubview:peoLabel];
-    UILabel* addrLabel=[[UILabel alloc]initWithFrame:CGRectMake(24, 91, 42, 21)];
-    addrLabel.textColor=[UIColor lightGrayColor];
-    addrLabel.backgroundColor=[UIColor clearColor];
-    addrLabel.font=[UIFont systemFontOfSize:14.0];
-    addrLabel.text=@"地点:";
-    [cell.contentView addSubview:addrLabel];
-    UILabel* timeLabel=[[UILabel alloc]initWithFrame:CGRectMake(24, 111, 42, 21)];
-    timeLabel.textColor=[UIColor lightGrayColor];
-    timeLabel.backgroundColor=[UIColor clearColor];
-    timeLabel.font=[UIFont systemFontOfSize:14.0];
-    timeLabel.text=@"时间:";
-    [cell.contentView addSubview:timeLabel];
     cell.selectionStyle=UITableViewCellSelectionStyleNone;
-    cell.backgroundView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"PRframe@2x.png"]];
-    
     NSDictionary* dict=[self.sumArray objectAtIndex:section];
     NSLog(@"%@",dict);
+    
     NSString *stringType=[dict objectForKey:@"P_TYPE"];
     if (![[stringType substringToIndex:1] isEqualToString:@"1"]) {
         lable5.text=[dict objectForKey:@"P_LABLE"];
-        imagePICView0.image=[UIImage imageNamed:@"PRTag@2x.png"];
+        imagePICView0.image=[UIImage imageNamed:@"tagparty"];
         //NSLog(@"qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq%@",cell.lable5.text);
     }
-    
+    if ([[[dict objectForKey:@"P_STATUS"]substringToIndex:1]isEqualToString:@"N"]) {
+        cell.backgroundView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"PartyLabelGrey"]];
+    }
+    else
+    {
+        if ([[[dict objectForKey:@"P_STATUS"]substringToIndex:1]isEqualToString:@"Y"]) {
+            cell.backgroundView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"partylabelgreen"]];
+        }
+        else
+        {
+            
+            cell.backgroundView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"partylabelyellow"]];
+            
+            
+        }
+    }
     lable7.text=[dict objectForKey:@"P_TITLE"];
-    NSMutableString *mutableStringLocal=[[NSMutableString alloc] initWithFormat:@"%@",[dict objectForKey:@"P_DISTANCEC"]];
+    NSMutableString *mutableStringLocal=[[NSMutableString alloc] initWithFormat:@"%@",[dict objectForKey:@"P_DISTANCE"]];
     lable2.text=mutableStringLocal;
     NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
     [formatter setDateStyle:NSDateFormatterMediumStyle];
@@ -637,11 +629,11 @@
     NSString* string=[NSString stringWithFormat:@"%@",[dict objectForKey:@"usernum"]];
     //NSLog(@"%@",string);
     if ([[[user objectForKey:@"USER_SEX"]substringToIndex:1] isEqualToString:@"M"]) {
-        imagePICView5.image=[UIImage imageNamed:@"PRmale1@2x.png"];
+        imagePICView5.image=[UIImage imageNamed:@"PartyMale"];
         //NSLog(@"wwwwwwwwwwwwww%@",cell.imagePICView5.image);
     }
     if ([[[user objectForKey:@"USER_SEX"]substringToIndex:1] isEqualToString:@"F"]) {
-        imagePICView5.image=[UIImage imageNamed:@"PRfemale1@2x.png"];
+        imagePICView5.image=[UIImage imageNamed:@"Partyfemale"];
     }
     NSMutableArray *mutableArray=[[NSMutableArray alloc]init];
     //===============联合创建人名字和照片======================================
@@ -703,19 +695,7 @@
         [morebutton setImage:[UIImage imageNamed:@"PsearchMore@2x.png"] forState:UIControlStateNormal];
         [morebutton addTarget:self action:@selector(PartyClickMore) forControlEvents:UIControlEventTouchDown];
         [footerview addSubview:morebutton];
-        UIImageView* shadowview=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"PRviewShadow@2x.png"]];
-        shadowview.backgroundColor=[UIColor clearColor];
-        shadowview.frame=CGRectMake(0, 0, 320, 11);
-        [footerview addSubview:shadowview];
         return footerview;
-    }
-    
-    else
-    {
-        UIImageView* shadowview=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"PRviewShadow@2x.png"]];
-        shadowview.backgroundColor=[UIColor clearColor];
-        shadowview.frame=CGRectMake(0, 0, 320, 11);
-        return shadowview;
     }
     return nil;
 }
